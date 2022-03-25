@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TRL Drop Off Form</title>
+        <meta name="description" content="Drop off form for The Repair Lady LLC">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="Page header">
+            <h1>The Repair Lady - Drop off Form</h1>
+            <p>Instructions:<br />Please fill the form questions, sign it, then click the Submit button</p>
+        </div>
+        <form class="signature-pad-form" action="#" method="POST">
+            <div id="formQuestions">
+                <label for="fullname">Your Name<span id="req">*</span></label><br />
+                <input type="text" name="fullname" required /><br />
+                
+                <label for="email">Email<span id="req">*</span></label><br />
+                <input type="email" name="email" required /><br />
+    
+                <label for="phone">Contact Phone Number<span id="req">*</span></label><br />
+                <input type="number" name="phone" required /><br />
+                <label for="altphone">Alt Phone Number</label><br />
+                <input type="number" name="altphone" /><br />
+    
+                <label for="desc">Description of Problem<span id="req">*</span></label><br />
+                <input type="text" name="desc" required /><br />
+    
+                <label for="items">Items Received<span id="req">*</span></label><br />
+                <textarea name="items" required ></textarea><br />
+    
+                <label for="imei">IMEI or Serial Number</label><br />
+                <textarea name="imei"></textarea><br />
+    
+                <label for="liq">Liquid Damaged</label><br />
+                <textarea name="liq"></textarea><br />
+                <div id="disclaimer">
+                    <p><h4>GENERAL DISCLAIMER</h4>
+                        THE REPAIR LADY offers electronic device repair and upgrade services. I conduct business honestly, fairly and subject to reason. I strive to provide great quality of service and support. I cannot guarantee specific results for my services, but I will operate under these principles.<br />
+                        <li>PAYMENT TERMS<br />
+                        Full payment is due upon completion of service, upgrade or repair. Failure to pay may result in the debt being turned over to a collections agency. You are responsible for all costs incurred from myself, collection agencies, or courts and litigation for failure to pay.</li>
+                        <li>LIABILITY<br />
+                        I provide my services in an effort to service or repair systems for which you request. I will not intentionally harm your system. It is my goal to fix your device. In the case of accidental damage to data or your device, orfurther damage/data loss which may occur from events such as viruses, software errors, or hardware problems/failures. You agree to hold THE REPAIR LADY, and any persons associated with or involved in the work being done for you, harmless from damage arising from such events.</li>
+                        <li>WARRANTY<br />
+                        THE REPAIR LADY offers a 30 day part and labor warranty unless otherwise stated. If device fails or stops working due to defective part/labor, I will resolve such issues and cover any costs related to defective part and/or labor.<br />
+                        WARRANTY DOES NOT EXTEND TO WATER/LIQUID DAMAGE REPAIRS.</li>
+                        <li>UNCLAIMED PROPERTY<br />
+                        Devices not picked up within 7 business days may be assessed an additional $5/day storage fee.<br />
+                        Devices not picked up or claimed within 45 business days can be sold or donated (in compliance with California State Law). Please contact me if you need extra time for any part of my services, and arrangements can be made on a per-case basis.</li>
+                        <b>BY SIGNING THIS FORM, YOU AGREE TO THE ABOVE TERMS AND AUTHORIZE THE REPAIR LADY TO PERFORM REPAIR AND/OR OTHER SERVICES IN COMPLIANCE WITH THIS WORK ORDER.</b>
+                    </p>
+                    </div>
+    
+            </div>
+
+            <p id="SignHere">Sign here</p><span id="req">*</span>
+            <canvas class="signature-pad" ></canvas>
+            <p>
+                <a href="#" class="clear-button">Clear</a>
+            </p>
+
+            <button class="submit-button" type="submit">SUBMIT</button>
+
+            <script src="app.js"></script>
+
+        </form>
+        <div><br /></div>
+    </body>
+</html>
