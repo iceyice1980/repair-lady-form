@@ -53,6 +53,8 @@ label {
     color: white;
     cursor: pointer;*/
     margin-top: 2px;
+    margin-bottom: 5vh;
+
 }
 
 @media   (pointer: coarse) {
@@ -64,6 +66,5 @@ label {
     }
   
     .submit-button {
-        margin-bottom: 5vh;
     }
 }
