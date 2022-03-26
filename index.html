@@ -17,9 +17,21 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="Page header">
-            <h1>The Repair Lady - Drop off Form</h1>
-            <p>Instructions:<br />Please fill the form questions, sign it, then click the Submit button</p>
+            <picture align="center">
+                <source align="center" srcset="trlSquare.jpg" media="(max-width: 700px)" width="350px" />
+                <source align="center" srcset="trlSquare.jpg" media="(max-width: 1200px)" />
+                <img align="center" srcset="trlBanner.png" alt="The Repair Lady" />
+              </picture>
+            <h1 class="display-1">Drop off Form</h1>
+            <p class="lead">Instructions:<br />
+                    <ol>
+                        <li>Please fill out the form questions</li>
+                        <li>Sign in Signature box</li>
+                        <li>Click Submit Button</li>
+                    </ol>
+            </p>
         </div>
+        <hr />
         <form class="signature-pad-form" action="#" method="POST">
             <div id="formQuestions">
                 <label for="fullname">Your Name<span id="req">*</span></label><br />
@@ -44,7 +56,8 @@
     
                 <label for="liq">Liquid Damaged</label><br />
                 <textarea name="liq"></textarea><br />
-                <div id="disclaimer">
+                <hr />
+                <div id="disclaimer" class="small">
                     <p><h4>GENERAL DISCLAIMER</h4>
                         THE REPAIR LADY offers electronic device repair and upgrade services. I conduct business honestly, fairly and subject to reason. I strive to provide great quality of service and support. I cannot guarantee specific results for my services, but I will operate under these principles.<br />
                         <li>PAYMENT TERMS<br />
@@ -59,6 +72,7 @@
                         Devices not picked up or claimed within 45 business days can be sold or donated (in compliance with California State Law). Please contact me if you need extra time for any part of my services, and arrangements can be made on a per-case basis.</li>
                         <b>BY SIGNING THIS FORM, YOU AGREE TO THE ABOVE TERMS AND AUTHORIZE THE REPAIR LADY TO PERFORM REPAIR AND/OR OTHER SERVICES IN COMPLIANCE WITH THIS WORK ORDER.</b>
                     </p>
+                    <hr />
                     </div>
     
             </div>
@@ -72,6 +86,8 @@
             <button class="submit-button" type="submit">SUBMIT</button>
 
             <script src="app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
         </form>
         <div><br /></div>
