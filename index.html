@@ -33,29 +33,30 @@
         </div>
         <hr />
         <form class="signature-pad-form" action="#" method="POST">
-            <div id="formQuestions">
+            <div id="form-group form-control form-text">
                 <label for="fullname">Your Name<span id="req">*</span></label><br />
-                <input type="text" name="fullname" required /><br />
+                <input type="text" name="fullname" required placeholder="Jane Doe"/><br />
                 
                 <label for="email">Email<span id="req">*</span></label><br />
-                <input type="email" name="email" required /><br />
+                <input type="email" name="email" required placeholder="your@email.com" /><br />
     
                 <label for="phone">Contact Phone Number<span id="req">*</span></label><br />
-                <input type="number" name="phone" required /><br />
+                <input type="number" name="phone" required placeholder="123-456-7890" /><br />
                 <label for="altphone">Alt Phone Number</label><br />
-                <input type="number" name="altphone" /><br />
+                <input type="number" name="altphone" placeholder="Add this for phone drop offs" /><br />
     
                 <label for="desc">Description of Problem<span id="req">*</span></label><br />
-                <input type="text" name="desc" required /><br />
+                <input type="text" name="desc" required placeholder="Doesn't power on, broken display, funny noises" /><br />
     
                 <label for="items">Items Received<span id="req">*</span></label><br />
-                <textarea name="items" required ></textarea><br />
+                <textarea name="items" required placeholder="Laptop, cellphone, charger" ></textarea><br />
     
                 <label for="imei">IMEI or Serial Number</label><br />
-                <textarea name="imei"></textarea><br />
+                <textarea name="imei" placeholder="XY-1234, 03348484"></textarea><br />
     
                 <label for="liq">Liquid Damaged</label><br />
-                <textarea name="liq"></textarea><br />
+                <p class="small">Subject to $25 deposit</p>
+                <input type="text" name="liq" placeholder="Yes/No"><br />
                 <hr />
                 <div id="disclaimer" class="small">
                     <p><h4>GENERAL DISCLAIMER</h4>
@@ -83,7 +84,7 @@
                 <a href="#" class="clear-button">Clear</a>
             </p>
 
-            <button class="submit-button" type="submit">SUBMIT</button>
+            <button class="btn btn-primary submit-button" type="submit">SUBMIT</button>
 
             <script src="app.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
