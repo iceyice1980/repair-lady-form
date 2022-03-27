@@ -46,15 +46,15 @@ label {
 
 .submit-button {
     width: 100%;
-    /*
-    background-color: var(--primary-color);
-    border: none;
-    padding: 0.5rem 1rem;
-    color: white;
-    cursor: pointer;*/
     margin-top: 2px;
     margin-bottom: 5vh;
 
+}
+
+.toast{
+    position: relative;
+    bottom: 10vh; 
+    left: 10px;
 }
 
 @media   (pointer: coarse) {
