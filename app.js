@@ -38,12 +38,12 @@ form.addEventListener('submit', (event) => {
         Name: fullname.value,
         Email: email.value,
         Phone: phone.value,
-        Alt-phone: altphone.value,
+        AltPhone: altphone.value,
         Description: desc.value,
         Items: items.value,
         IMEI: imei.value,
-        Liquid-dmg: liq.value,
-        Dte: date,
+        LiquidDmg: liq.value,
+        Date: date,
         sigimage: imageURL
     })
     console.log("Stringed body", body)
