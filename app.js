@@ -35,15 +35,15 @@ form.addEventListener('submit', (event) => {
     const endpoint = "https://h7tealj9lk.execute-api.us-west-1.amazonaws.com/default/trl-dropoff-python"
     /* POST body */
     const body = JSON.stringify({
-        fullname: fullname.value,
-        email: email.value,
-        phone: phone.value,
-        altphone: altphone.value,
-        desc: desc.value,
-        items: items.value,
-        imei: imei.value,
-        liq: liq.value,
-        date: date,
+        Name: fullname.value,
+        Email: email.value,
+        Phone: phone.value,
+        Alt-phone: altphone.value,
+        Description: desc.value,
+        Items: items.value,
+        IMEI: imei.value,
+        Liquid-dmg: liq.value,
+        Dte: date,
         sigimage: imageURL
     })
     console.log("Stringed body", body)
